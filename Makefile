@@ -86,7 +86,7 @@ ifeq "$(PLATFORM)" "trimui"
 OBJS += platform/opendingux/inputmap.o
 use_inputmap ?= 1
 PLATFORM := generic
-CFLAGS += -DSDL_SURFACE_SW
+CFLAGS += -Ofast -DSDL_SURFACE_SW
 LDLIBS += -lSDL_image -lSDL_ttf -ldl
 endif
 

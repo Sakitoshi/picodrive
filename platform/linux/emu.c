@@ -125,6 +125,9 @@ void plat_video_set_buffer(void *buf)
 
 static void apply_renderer(void)
 {
+	if (currentConfig.scaling)
+		PicoIn.opt |=  POPT_EN_SOFTSCALE;
+
 	switch (get_renderer()) {
 	case RT_16BIT:
 		PicoIn.opt &= ~POPT_ALT_RENDERER;

@@ -77,6 +77,9 @@ static const char *men_dummy[] = { NULL };
 #include <platform/psp/menu.c>
 #elif defined(PANDORA)
 #include <platform/pandora/menu.c>
+#elif defined(__TRIMUI__)
+#include <platform/trimui/menu.c>
+#define MENU_OPTIONS_ADV
 #else
 #define MENU_OPTIONS_GFX
 #define MENU_OPTIONS_ADV
