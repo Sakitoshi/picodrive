@@ -12,4 +12,4 @@
 	url = https://github.com/lieff/minimp3
 [submodule "platform/libpicofe"]
 	path = platform/libpicofe
-	url = git@github.com:sakitoshi/libpicofe-picodrive.git
+	url = https://github.com/sakitoshi/libpicofe-picodrive.git
